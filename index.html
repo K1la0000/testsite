@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Мой тестовый сайт</title>
+    <title>Стенд для проверки метрик</title>
     <style>
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -34,19 +34,29 @@
             line-height: 1.5;
             margin-bottom: 30px;
         }
-        /* Место для стилей вашего виджета, если нужно */
     </style>
 </head>
 <body>
 
     <div class="container">
-        <h1>Привет! Это простой сайт</h1>
-        <p>Страница готова к работе. Сюда можно добавить скрипты, кнопки или встроить виджет для тестирования.</p>
+        <h1>Тестовый стенд</h1>
+        <p>На этой странице установлен виджет СБИС для тестирования метрик.</p>
         
-        <!-- Вставьте код вашего виджета ниже этой строки -->
+        <!-- BEGIN SABY WIDGET CODE -->
+        <script type="text/javascript" data-saby-widget="019f6031-399b-758b-9fb1-5e6610583db8">
+        (
+           function(win, doc, url) {
+              var sws = doc.createElement('script');
+              sws.type = 'text/javascript';
+              sws.async = true;
+              sws.src = url;
+              var pfs = doc.getElementsByTagName('script')[0];
+              pfs.parentNode.insertBefore(sws, pfs);
+           }
+        )(window, document, "https://test-site.sbis.ru/consultant-widget/script/019f6031-399b-758b-9fb1-5e6610583db8");
+        </script>
+        <!-- END SABY WIDGET CODE -->
         
-        
-        <!-- Конец кода виджета -->
     </div>
 
 </body>
